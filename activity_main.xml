@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number 1"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/num1"
+        />
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number 1"
+        android:textSize="20dp"
+        android:layout_below="@+id/number1"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_below="@+id/num2"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/number2"
+        android:layout_marginLeft="16dp"
+        android:onClick="buttonClick"
+        android:text="+"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/number2"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/add"
+        android:onClick="buttonClick"
+        android:text="-"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/add"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="buttonClick"
+        android:text="x"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/minus"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/add"
+        android:onClick="buttonClick"
+        android:text="/"
+        android:textSize="50dp" />
+
+
+</RelativeLayout>
